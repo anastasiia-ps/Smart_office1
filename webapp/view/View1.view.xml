@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="com.quanto.solutions.ui.smartoffice.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    
+                    <Button text="{i18n>showHelloButtonText}" press=".onShowHello"/>
+                    <core:Icon
+                        src="sap-icon://syringe"
+                        class="size1"
+                        color="#031E48" >
+                        <core:layoutData>
+                            <FlexItemData growFactor="1" />
+                        </core:layoutData>
+                    </core:Icon>
+                    <Input 
+                        value="{/recipient/name}"
+                        description="Hello {/recipient/name}" 
+                        valueLiveUpdate="true"
+                        width="60%"/>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
