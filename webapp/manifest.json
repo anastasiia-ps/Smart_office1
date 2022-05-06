@@ -64,6 +64,7 @@
           "bundleName": "com.quanto.solutions.ui.smartoffice.i18n.i18n"
         }
       },
+      
       "": {
         "dataSource": "mainService",
         "preload": true,
@@ -82,6 +83,7 @@
           "uri": "css/style.css"
         }
       ]
+
     },
     "routing": {
       "config": {
